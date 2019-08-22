@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_over"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/winnner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scoreResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnner">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="USER"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="BOT1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="BOT2"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#bab9b9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="BOT3"
+            android:textColor="#000000" />
+
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/scoreResult"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/totalScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreResult">
+
+        <TextView
+            android:id="@+id/totalScore0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalScore1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalScore2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/totalScore3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#bab9b9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="#000000" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:shadowColor="@android:color/holo_red_light"
+        android:text="Home"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalScore" />
+</android.support.constraint.ConstraintLayout>

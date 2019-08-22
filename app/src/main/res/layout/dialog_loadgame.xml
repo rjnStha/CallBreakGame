@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/black">
+
+        <TextView
+            android:id="@+id/fileNameDisplay"
+            android:layout_width="230px"
+            android:layout_height="match_parent"
+            android:text="@string/file_name"
+            android:background="#d3d3d3"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="450px"
+            android:layout_height="match_parent"
+            android:background="#bab9b9"
+            android:text="@string/last_date_modified"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/loadGameList"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:background="@drawable/black">
+
+    </TableLayout>
+    <LinearLayout
+        android:id="@+id/deleteLoadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/black"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

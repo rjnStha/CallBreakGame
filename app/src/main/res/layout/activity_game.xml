@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/score"
+            android:layout_width="51dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/score"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="221dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="51dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/save"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_table"
+        android:layout_width="0dp"
+        android:layout_height="351dp"
+        android:background="@drawable/casino_table"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_tab">
+
+        <TextView
+            android:id="@+id/opponent2_info"
+            android:layout_width="67dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/black"
+            android:textAlignment="center"
+            android:text="BOT2 -/-"
+            android:textSize="12sp" />
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/opponent3_info"
+                android:layout_width="67dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black"
+                android:text="BOT3 -/-"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/opponent2"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/card_back"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/opponent1_info"
+                android:background="@drawable/black"
+                android:layout_width="67dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="BOT1 -/-"
+                android:textSize="12sp" />
+
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/opponent3"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/card_back"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/opponent1"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/card_back"
+                android:textSize="12sp" />
+
+        </TableRow>
+        <TextView
+            android:id="@+id/user_info"
+            android:layout_width="67dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/black"
+            android:textAlignment="center"
+            android:text="User -/-"
+            android:textSize="12sp" />
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/user"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/card_back"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_table">
+
+        <TableRow
+            android:layout_width="353dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/t0"
+                android:layout_width="67dp"
+                android:background="@drawable/card_back"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t1"
+                android:layout_width="74dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t2"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t3"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t4"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t5"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t6"
+                android:layout_width="67dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="307dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/t7"
+                android:layout_width="67dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/card_back"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/t8"
+                android:layout_width="67dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t9"
+                android:layout_width="67dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t10"
+                android:layout_width="67dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t11"
+                android:layout_width="67dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+            <Button
+                android:id="@+id/t12"
+                android:layout_width="67dp"
+                android:layout_marginLeft="-20dp"
+                android:background="@drawable/card_back" />
+
+
+        </TableRow>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

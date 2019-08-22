@@ -1,0 +1,9 @@
+<set xmlns:andriod ="http://schemas.android.com/apk/res/android"
+    andriod:fillAfter="true">
+    <alpha
+        andriod:duration = "1000"
+        andriod:fromAlpha="1.0"
+        andriod:interpolator ="@android:anim/accelerate_interpolator"
+        andriod:toAlpha="0.0"
+        />
+    </set>
